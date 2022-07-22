@@ -1,5 +1,5 @@
 ---
-image: "/uploads/woman-g5026caddf_1920.jpg"
+image: "/uploads/justemoi.png"
 titre: '" Juste moi "'
 description: Séance pour une personne, en extérieur ou en studio.
 prix: 130 €
