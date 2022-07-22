@@ -24,5 +24,6 @@ fields:
   label: Prix
 pages:
 - src/content/prestations/Famille.md
+- src/content/prestations/Grossesse.md
 - src/content/prestations/Juste moi.md
 - src/content/prestations/Pour deux.md
