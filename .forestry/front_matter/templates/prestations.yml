@@ -23,4 +23,5 @@ fields:
     required: false
   label: Prix
 pages:
+- src/content/prestations/Bébé.md
 - src/content/prestations/Mariage.md
