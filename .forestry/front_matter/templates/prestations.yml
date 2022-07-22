@@ -22,5 +22,3 @@ fields:
   config:
     required: false
   label: Prix
-pages:
-- src/content/prestations/Mariage.md
