@@ -24,4 +24,5 @@ fields:
   label: Prix
 pages:
 - src/content/prestations/Bébé.md
+- src/content/prestations/Juste moi.md
 - src/content/prestations/Mariage.md
