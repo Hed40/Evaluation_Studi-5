@@ -17,6 +17,11 @@ fields:
   config:
     required: false
   label: Description
+- name: conditions
+  type: text
+  config:
+    required: false
+  label: Conditions
 - name: prix
   type: text
   config:
