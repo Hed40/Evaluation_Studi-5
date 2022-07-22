@@ -1,0 +1,55 @@
+---
+title: Contact
+layout: layout.njk
+style: /css/contact.css
+script: /js/validationForm.js
+---
+<main class="main_contact">
+    <container class="container_contact">
+        <section class="section_contact">
+            <div class= "title_capt">
+            <h1>{{site.contactTitle}}</h1>
+            </div>
+            <form class=" needs-validation" id="ContactForm" novalidate>
+
+                <div class="lastname mb-2">
+                    <label for="lastName" class="form-label">Nom</label>
+                    <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Nom">
+                    <div class="invalid-feedback">Veuillez saisir votre nom.</div>
+                </div>
+                <div class="firstname mb-2">
+                    <label for="firstname" class="form-label">Prénom</label>
+                    <input type="text" class="form-control" name="firstName" id="firstName" placeholder="Prénom">
+                    <div class="invalid-feedback">
+                    Veuillez saisir votre prénom.
+                </div>
+                </div>
+
+                <div class="email mb-2">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="j.dupont@gmail.com">
+                    <div class="invalid-feedback">
+                    Veuillez saisir votre e-mail.
+                </div>
+                </div>
+                <div class="phoneNumber mb-2">
+                    <label for="phoneNumber" class="form-label">Téléphone</label>
+                    <input type="phoneNumber" class="form-control" name="phoneNumber" id="phoneNumber">
+                    <div class="invalid-feedback">
+                    Veuillez saisir votre numéro de téléphone.
+                </div>
+                </div>
+                <div class="Message mb-2">
+                    <label for="Message" class="form-label">Votre Message</label>
+                    <textarea type="form-control" class="form-control" name="Message" id="Message" rows="6" placeholder="Veuillez écrire votre message ici..."></textarea>
+                    <div class="invalid-feedback">
+                    Veuillez saisir au moins 20 caractères.
+
+            </div>
+                    <div class="submit">
+                        <button type="submit" class="btn btn-primary ">Envoyer</button>
+                    </div>
+                </form>
+            </section>
+        </container>
+    </main>

@@ -1,0 +1,28 @@
+---
+label: Photographies
+hide_body: true
+fields:
+- name: photographie
+  type: file
+  config:
+    maxSize: 64
+  label: Photographie
+- name: categories
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Mariage
+    - Grossesse
+    - Bébé
+    - Famille
+    - Baptème
+    - Couple
+    - Portrait
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Catégories
