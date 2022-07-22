@@ -18,8 +18,9 @@ style: /css/prestations.css
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">{{ prestations.data.titre | safe }}</h5>
+                <h2 class="card-title">{{ prestations.data.titre | safe }}</h2>
                 <p class="card-text">{{ prestations.data.description | safe }}</p>
+                <p class="card-text">{{ prestations.data.conditions | safe }}</p>
                 <h3 class="card-title">{{prestations.data.prix | safe }}</h3>
               </div>
             </div>

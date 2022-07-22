@@ -34,9 +34,21 @@ h1 {
   width: 50%;
   background-color: white;
 }
+
+h2{
+  color: #3c6382;
+  font-family: "K2D", sans-serif;
+  font-size: medium;
+  text-align: center;
+}
+
 h3{
   color: #3c6382;
+  font-family: "K2D", sans-serif;
+  font-size: medium;
+  text-align: center;
 }
+
 .title_capt{
   display: flex;
   justify-content: center
