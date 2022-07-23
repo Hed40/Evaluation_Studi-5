@@ -20,8 +20,10 @@ style: /css/prestations.css
               <div class="card-body d-flex ">
                 <h2 class="card-title" id="titlecard">{{ prestations.data.titre | safe }}</h2>
                 <p class="card-text" id="description">{{ prestations.data.description | safe }}</p>
+                <img src="" class="img-fluid rounded" id="toast" alt="image">
                 <p class="card-text-Price" id="price">{{prestations.data.prix | safe }}</p>
               </div>
+              
             </div>
           </div>
         </div>
