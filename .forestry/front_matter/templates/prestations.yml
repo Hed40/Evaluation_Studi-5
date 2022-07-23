@@ -27,6 +27,10 @@ fields:
   config:
     required: false
   label: Prix
+- name: tag
+  type: tag_list
+  default: []
+  label: Tag
 pages:
 - src/content/prestations/Famille.md
 - src/content/prestations/Grossesse.md
