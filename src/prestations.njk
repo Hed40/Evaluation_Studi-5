@@ -13,15 +13,14 @@ style: /css/prestations.css
       {% for prestations in collections.prestations %}
         <div class="card mb-3" style="max-width: 600px;">
           <div class="row g-0">
-            <div class="col-md-4 col-sm-2">
+            <div class="image col-md-4 col-sm-2">
               <img src="{{ prestations.data.image| url }}" class="img-fluid rounded" id="images_presta" alt="image">
             </div>
-            <div class="col-md-8">
-              <div class="card-body">
+            <div class="col-md-8 d-flex">
+              <div class="card-body d-flex ">
                 <h2 class="card-title" id="titlecard">{{ prestations.data.titre | safe }}</h2>
                 <p class="card-text" id="description">{{ prestations.data.description | safe }}</p>
-                <p class="card-text" id="condition">{{ prestations.data.conditions | safe }}</p>
-                <p class="card-text" id="price">{{prestations.data.prix | safe }}</p>
+                <p class="card-text-Price" id="price">{{prestations.data.prix | safe }}</p>
               </div>
             </div>
           </div>
