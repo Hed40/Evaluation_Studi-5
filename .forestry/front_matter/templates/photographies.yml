@@ -7,7 +7,7 @@ fields:
   config:
     maxSize: 64
   label: Photographie
-- name: categories
+- name: category
   type: select
   default: []
   config:
@@ -25,8 +25,4 @@ fields:
       section: 
       file: 
       path: 
-  label: Catégories
-- name: tag
-  type: tag_list
-  default: []
-  label: Tag
+  label: Category
