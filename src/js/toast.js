@@ -1,3 +1,5 @@
+
+//Affectation du Toast
 const toastTrigger = document.getElementById('logo_info')
 const toastLiveExample = document.getElementById('liveToast')
 if (toastTrigger) {
@@ -6,4 +8,5 @@ if (toastTrigger) {
 
     toast.show()
   })
+
 }
