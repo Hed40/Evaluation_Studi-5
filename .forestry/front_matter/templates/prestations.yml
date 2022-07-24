@@ -17,20 +17,26 @@ fields:
   config:
     required: false
   label: Description
-- name: conditions
-  type: text
-  config:
-    required: false
-  label: Conditions
 - name: prix
   type: text
   config:
     required: false
   label: Prix
-- name: tag
-  type: tag_list
-  default: []
-  label: Tag
+- name: toast_title
+  type: text
+  config:
+    required: false
+  label: Toast_Title
+- name: toast_sub_title
+  type: text
+  config:
+    required: false
+  label: Toast_Sub_title
+- name: toast_body
+  type: text
+  config:
+    required: false
+  label: Toast_body
 pages:
 - src/content/prestations/Famille.md
 - src/content/prestations/Grossesse.md
