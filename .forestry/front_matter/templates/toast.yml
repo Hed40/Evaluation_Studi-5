@@ -1,0 +1,25 @@
+---
+label: toast
+hide_body: true
+fields:
+- type: file
+  name: image
+  label: image
+- type: text
+  name: titre
+  label: titre
+- type: text
+  name: description
+  label: description
+- type: text
+  name: prix
+  label: prix
+- type: text
+  name: toast_title
+  label: toast_title
+- type: text
+  name: toast_sub_title
+  label: toast_sub_title
+- type: text
+  name: toast_body
+  label: toast_body
