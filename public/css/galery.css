@@ -129,20 +129,29 @@ button {
     display: flex;
     width: 20px;
     height: 20px;
-    
   }
 
-  .combo_title_info{
+  .combo_title_info {
     display: flex;
     justify-content: space-between;
   }
 
-  .nav-pills{       
+  .nav-pills {
     background-color: white;
     padding: 10px;
     border-radius: 8px;
     font-family: "K2D", sans-serif;
   }
-  .nav-link{
-
+  .img_galery {
+    display: flex;
+    border-radius: 8px;
+    width: 200px;
+    margin: 10px;
+    border: 1px solid;
+  }
+  .galeryShow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;;
+  }
 }

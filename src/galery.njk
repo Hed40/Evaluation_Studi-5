@@ -33,27 +33,69 @@ style: /css/galery.css
                         <button class="nav-link" id="pills-Portrait-tab" data-bs-toggle="pill" data-bs-target="#pills-Portrait" type="button" role="tab" aria-controls="pills-Portrait" aria-selected="false">Portrait</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-All-tab" data-bs-toggle="pill" data-bs-target="#pills-All" type="button" role="tab" aria-controls="pills-All" aria-selected="false">Toutes</button>
-                    </li>
-                </ul>
-                <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-Wedding" role="tabpanel" aria-labelledby="pills-Wedding-tab" tabindex="0">...</div>
-                    <div class="tab-pane fade" id="pills-Pregnancy" role="tabpanel" aria-labelledby="pills-Pregnancy-tab" tabindex="0">...</div>
-                    <div class="tab-pane fade" id="pills-Baby" role="tabpanel" aria-labelledby="pills-Baby-tab" tabindex="0">...</div>
-                    <div class="tab-pane fade" id="pills-Family" role="tabpanel" aria-labelledby="pills-Family-tab" tabindex="0">...</div>
-                    <div class="tab-pane fade" id="pills-Baptism" role="tabpanel" aria-labelledby="pills-Baptism-tab" tabindex="0">...</div>
-                    <div class="tab-pane fade" id="pills-Couple" role="tabpanel" aria-labelledby="pills-Couple-tab" tabindex="0">...</div>
-                    <div class="tab-pane fade" id="pills-Portrait" role="tabpanel" aria-labelledby="pills-Portrait-tab" tabindex="0">...</div>
-                    <div class="tab-pane fade" id="pills-All" role="tabpanel" aria-labelledby="pills-All-tab" tabindex="0">...</div>
+                        {% set categories = [] %}
+                        {% for photo in collections.All %}
+                            {% set currentCategory = photo.data.category %}
+                            {% if currentCategory not in categories %}
+                                <button class="nav-link" id="{{currentCategory}}" data-bs-toggle="pill" data-bs-target="#pills-All" type="button" role="tab" aria-controls="pills-All" aria-selected="false">{{currentCategory}}</button>
+                            </li>
+                            {% set categories = (categories.push(currentCategory), categories) %}
+                        {% endif %}
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-Wedding" role="tabpanel" aria-labelledby="pills-Wedding-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="pills-Pregnancy" role="tabpanel" aria-labelledby="pills-Pregnancy-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="pills-Baby" role="tabpanel" aria-labelledby="pills-Baby-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="pills-Family" role="tabpanel" aria-labelledby="pills-Family-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="pills-Baptism" role="tabpanel" aria-labelledby="pills-Baptism-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="pills-Couple" role="tabpanel" aria-labelledby="pills-Couple-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="pills-Portrait" role="tabpanel" aria-labelledby="pills-Portrait-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="pills-All" role="tabpanel" aria-labelledby="pills-All-tab" tabindex="0">...</div>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="section_photo">
-            {% for photographie in collections.galery %}
-            <div class="card mb-3" style="max-width: 400px;">
-                <img src="{{ galery.data.photographie| url }}"></img>
-            </div>
-            {% endfor %}
-        </section>
-    </container>
-</main>
+            </section>
+            <section class="section_photo">
+                <div class="galeryShow" id="All">
+                    {% for photo in collections.photoAll %}
+                        <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
+                    {% endfor %}
+                </div>
+                <div class="galeryShow" id="Wedding">
+                    {% for photo in collections.photoMariage %}
+                        <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
+                    {% endfor %}
+                </div>
+                <div class="galeryShow" id="Baptism">
+                    {% for photo in collections.photoBaptism %}
+                        <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
+                    {% endfor %}
+                </div>
+                <div class="galeryShow" id="Baby">
+                    {% for photo in collections.photoBaby %}
+                        <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
+                    {% endfor %}
+                </div>
+                <div class="galeryShow" id="Couple">
+                    {% for photo in collections.photoCouple %}
+                        <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
+                    {% endfor %}
+                </div>
+                <div class="galeryShow" id="Family">
+                    {% for photo in collections.photoFamily %}
+                        <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
+                    {% endfor %}
+                </div>
+                <div class="galeryShow" id="Portrait">
+                    {% for photo in collections.photoPortrait %}
+                        <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
+                    {% endfor %}
+                </div>
+                <div class="galeryShow" id="Pregnant">
+                    {% for photo in collections.photoPregnant %}
+                        <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
+                    {% endfor %}
+                </div>
+            </section>
+        </container>
+    </main>
+<script src="/js/galery.js"></script>
