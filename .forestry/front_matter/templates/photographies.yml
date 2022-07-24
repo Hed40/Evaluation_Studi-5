@@ -7,7 +7,7 @@ fields:
   config:
     maxSize: 64
   label: Photographie
-- name: categories
+- name: category
   type: select
   default: []
   config:
@@ -25,4 +25,33 @@ fields:
       section: 
       file: 
       path: 
-  label: Catégories
+  label: Category
+pages:
+- src/content/photographies/Baby_1.md
+- src/content/photographies/Baby_2.md
+- src/content/photographies/Baby_3.md
+- src/content/photographies/Baby_4.md
+- src/content/photographies/Baptism_1.md
+- src/content/photographies/Baptism_2.md
+- src/content/photographies/Baptism_3.md
+- src/content/photographies/Baptism_4.md
+- src/content/photographies/Couple_1.md
+- src/content/photographies/Couple_2.md
+- src/content/photographies/Couple_3.md
+- src/content/photographies/Couple_4.md
+- src/content/photographies/Family_1.md
+- src/content/photographies/Family_2.md
+- src/content/photographies/Family_3.md
+- src/content/photographies/Family_4.md
+- src/content/photographies/Mariage_1.md
+- src/content/photographies/Mariage_2.md
+- src/content/photographies/Mariage_3.md
+- src/content/photographies/Mariage_4.md
+- src/content/photographies/Portrait_1.md
+- src/content/photographies/Portrait_2.md
+- src/content/photographies/Portrait_3.md
+- src/content/photographies/Portrait_4.md
+- src/content/photographies/Pregnant_1.md
+- src/content/photographies/Pregnant_2.md
+- src/content/photographies/Pregnant_3.md
+- src/content/photographies/Pregnant_4.md
