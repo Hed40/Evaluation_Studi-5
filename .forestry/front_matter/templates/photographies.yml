@@ -27,6 +27,7 @@ fields:
       path: 
   label: Category
 pages:
+- src/content/photographies/Baby_1.md
 - src/content/photographies/Baptism_1.md
 - src/content/photographies/Baptism_2.md
 - src/content/photographies/Baptism_3.md
