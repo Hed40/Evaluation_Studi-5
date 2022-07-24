@@ -1,12 +1,55 @@
 ---
 title: Galerie photo
 layout: layout.njk
+style: /css/galery.css
 ---
-<main>
-<container class = "container_galery">
- <h1>{{site.galeryTitle}}</h1>
-</container>
+<main class="main_galery">
+    <container class = "container_galery">
+        <section class="section_navigation">
+            <div class= "title_capt">
+                <h1>{{site.galeryTitle}}</h1>
+            </div>
+            <div>
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-Wedding-tab" data-bs-toggle="pill" data-bs-target="#pills-Wedding" type="button" role="tab" aria-controls="pills-Wedding" aria-selected="true">Mariage</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-Pregnancy-tab" data-bs-toggle="pill" data-bs-target="#pills-Pregnancy" type="button" role="tab" aria-controls="pills-Pregnancy" aria-selected="false">Grossesse</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-Baby-tab" data-bs-toggle="pill" data-bs-target="#pills-Baby" type="button" role="tab" aria-controls="pills-Baby" aria-selected="false">Bébé</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-Family-tab" data-bs-toggle="pill" data-bs-target="#pills-Family" type="button" role="tab" aria-controls="pills-Family" aria-selected="false">Famille</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-Baptism-tab" data-bs-toggle="pill" data-bs-target="#pills-Baptism" type="button" role="tab" aria-controls="pills-Baptism" aria-selected="false">Baptème</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-Couple-tab" data-bs-toggle="pill" data-bs-target="#pills-Couple" type="button" role="tab" aria-controls="pills-Couple" aria-selected="false">Couple</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-Portrait-tab" data-bs-toggle="pill" data-bs-target="#pills-Portrait" type="button" role="tab" aria-controls="pills-Portrait" aria-selected="false">Portrait</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-All-tab" data-bs-toggle="pill" data-bs-target="#pills-All" type="button" role="tab" aria-controls="pills-All" aria-selected="false">Toutes</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-Wedding" role="tabpanel" aria-labelledby="pills-Wedding-tab" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="pills-Pregnancy" role="tabpanel" aria-labelledby="pills-Pregnancy-tab" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="pills-Baby" role="tabpanel" aria-labelledby="pills-Baby-tab" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="pills-Family" role="tabpanel" aria-labelledby="pills-Family-tab" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="pills-Baptism" role="tabpanel" aria-labelledby="pills-Baptism-tab" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="pills-Couple" role="tabpanel" aria-labelledby="pills-Couple-tab" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="pills-Portrait" role="tabpanel" aria-labelledby="pills-Portrait-tab" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="pills-All" role="tabpanel" aria-labelledby="pills-All-tab" tabindex="0">...</div>
+                </div>
+            </div>
+        </section>
+        <section class="section_photo">
+            
+        </section>
+    </container>
 </main>
-
-
-

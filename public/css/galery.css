@@ -1,0 +1,148 @@
+.main_galery {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.container_galery {
+  display: flex;
+  flex-direction: column;
+  background-color: #3c63826c;
+  align-items: center;
+  width: 400px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  padding-bottom: 20px;
+}
+.section_galery {
+  width: 80%;
+  justify-content: center;
+  justify-items: center;
+}
+h1 {
+  color: #3c6382;
+  font-family: "K2D", sans-serif;
+  font-size: medium;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 8px;
+  width: 50%;
+  background-color: white;
+}
+
+h2 {
+  color: #3c6382;
+  font-family: "K2D", sans-serif;
+  font-size: larger;
+  text-align: center;
+}
+
+.title_capt {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+button {
+  display: flex;
+  align-content: center;
+}
+
+@media screen and (min-width: 1200px) and (orientation: landscape) {
+  .main_galery {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .container_galery {
+    align-items: center;
+    width: 600px;
+  }
+
+  .section_navigation {
+    width: 80%;
+  }
+
+  .section_photo {
+    width: 80%;
+  }
+
+  h1 {
+    color: #3c6382;
+    font-family: "K2D", sans-serif;
+    font-size: medium;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 8px;
+    width: 50%;
+    background-color: white;
+  }
+
+  h2 {
+    color: #3c6382;
+    font-family: "K2D", sans-serif;
+    font-size: larger;
+    text-align: left;
+  }
+
+  .title_capt {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .image {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .d-flex {
+    justify-content: space-around;
+  }
+
+  .logo_info {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    
+  }
+
+  .combo_title_info{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-pills{       
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: "K2D", sans-serif;
+  }
+  .nav-link{
+
+}
