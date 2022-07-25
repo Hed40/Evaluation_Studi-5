@@ -35,10 +35,6 @@ footer {
   background-color: #ffffff;
 }
 
-header {
-
-}
-
 nav {
   position: fixed;
   background-color: #3c63826c;
@@ -73,6 +69,7 @@ nav {
 .background{
   background-image: url("/img/rain.jpg");
   background-size: cover;
-  max-height: 100%;
-  bottom: 0;
+  background-repeat: no-repeat repeat;
+  min-height: 100vh;
+  
 }

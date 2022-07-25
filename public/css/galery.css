@@ -103,12 +103,6 @@ button {
     justify-content: center;
   }
 
-  .card-body {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-
   .image {
     display: flex;
     width: 150px;
@@ -141,17 +135,24 @@ button {
     padding: 10px;
     border-radius: 8px;
     font-family: "K2D", sans-serif;
+    font-size: small;
+    color: #ff0062;
   }
   .img_galery {
     display: flex;
     border-radius: 8px;
-    width: 200px;
+    width: 20vw;
+    height: 13vw;
     margin: 10px;
-    border: 1px solid;
+    border: 1px solid #3c6382;
   }
   .galeryShow {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;;
+    justify-content: center;
+   
+  }
+  .categoryButton{
+    color: #3c6382;
   }
 }

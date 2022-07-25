@@ -2,7 +2,6 @@
 title: Galerie photo
 layout: layout.njk
 style: /css/galery.css
-script: /js/galery.js
 ---
 <main class="main_galery">
     <container class = "container_galery">
@@ -11,7 +10,6 @@ script: /js/galery.js
                 <h1>{{site.galeryTitle}}</h1>
             </div>
             <div class="galerieCategories">
-
                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                     {% set categories = [] %}
                     {% for photo in collections.photoAll %}
@@ -27,60 +25,49 @@ script: /js/galery.js
                         <button class="nav-link categoryButton active" id="All" data-bs-toggle="pill" data-bs-target="#pills-All" type="button" role="tab" aria-controls="pills-All" aria-selected="false">Toutes</button>
                     </li>
                 </ul>
-                <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-Wedding" role="tabpanel" aria-labelledby="pills-Wedding-tab" tabindex="0">...</div>
-                    <div class="tab-pane fade show" id="pills-Pregnancy" role="tabpanel" aria-labelledby="pills-Pregnancy-tab" tabindex="0">...</div>
-                    <div class="tab-pane fade" id="pills-Baby" role="tabpanel" aria-labelledby="pills-Baby-tab" tabindex="0">...</div>
-                    <div class="tab-pane fade" id="pills-Family" role="tabpanel" aria-labelledby="pills-Family-tab" tabindex="0">...</div>
-                    <div class="tab-pane fade" id="pills-Baptism" role="tabpanel" aria-labelledby="pills-Baptism-tab" tabindex="0">...</div>
-                    <div class="tab-pane fade" id="pills-Couple" role="tabpanel" aria-labelledby="pills-Couple-tab" tabindex="0">...</div>
-                    <div class="tab-pane fade" id="pills-Portrait" role="tabpanel" aria-labelledby="pills-Portrait-tab" tabindex="0">...</div>
-                    <div class="tab-pane fade" id="pills-All" role="tabpanel" aria-labelledby="pills-All-tab" tabindex="0">...</div>
+            </section>
+            <section class="section_photo">
+                
+                <div class="galeryShow" id="All">
+                    {% for photo in collections.photoAll %}
+                        <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
+                    {% endfor %}
                 </div>
-            </div>
-        </section>
-        <section class="section_photo">
-
-            <div class="galeryShow" id="All">
-                {% for photo in collections.photoAll %}
-                    <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
-                {% endfor %}
-            </div>
-            <div class="galeryShow" id="Mariage">
-                {% for photo in collections.photoMariage %}
-                    <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
-                {% endfor %}
-            </div>
-            <div class="galeryShow" id="Baptême">
-                {% for photo in collections.photoBapteme %}
-                    <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
-                {% endfor %}
-            </div>
-            <div class="galeryShow" id="Bébé">
-                {% for photo in collections.photoBebe %}
-                    <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
-                {% endfor %}
-            </div>
-            <div class="galeryShow" id="Couple">
-                {% for photo in collections.photoCouple %}
-                    <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
-                {% endfor %}
-            </div>
-            <div class="galeryShow" id="Famille">
-                {% for photo in collections.photoFamille %}
-                    <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
-                {% endfor %}
-            </div>
-            <div class="galeryShow" id="Portrait">
-                {% for photo in collections.photoPortrait %}
-                    <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
-                {% endfor %}
-            </div>
-            <div class="galeryShow" id="Grossesse">
-                {% for photo in collections.photoGrossesse %}
-                    <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
-                {% endfor %}
-            </div>
-        </section>
-    </container>
-</main>
+                <div class="galeryShow" id="Mariage">
+                    {% for photo in collections.photoMariage %}
+                        <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
+                    {% endfor %}
+                </div>
+                <div class="galeryShow" id="Baptême">
+                    {% for photo in collections.photoBapteme %}
+                        <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
+                    {% endfor %}
+                </div>
+                <div class="galeryShow" id="Bébé">
+                    {% for photo in collections.photoBebe %}
+                        <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
+                    {% endfor %}
+                </div>
+                <div class="galeryShow" id="Couple">
+                    {% for photo in collections.photoCouple %}
+                        <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
+                    {% endfor %}
+                </div>
+                <div class="galeryShow" id="Famille">
+                    {% for photo in collections.photoFamille %}
+                        <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
+                    {% endfor %}
+                </div>
+                <div class="galeryShow" id="Portrait">
+                    {% for photo in collections.photoPortrait %}
+                        <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
+                    {% endfor %}
+                </div>
+                <div class="galeryShow" id="Grossesse">
+                    {% for photo in collections.photoGrossesse %}
+                        <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
+                    {% endfor %}
+                </div>
+            </section>
+        </container>
+    </main>
