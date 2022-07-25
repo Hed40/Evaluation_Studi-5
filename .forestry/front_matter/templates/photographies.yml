@@ -20,6 +20,7 @@ fields:
     - Baptème
     - Couple
     - Portrait
+    - Photo d'art
     source:
       type: simple
       section: 
