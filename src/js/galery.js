@@ -1,11 +1,11 @@
-const categoryButtons = document.getElementsByClassName('nav-link');
+const categoryButtons = document.getElementsByClassName('nav-link categoryButton');
 const galeriesShow = document.getElementsByClassName('galeryShow');
 const categoryButtonIds = [];
 
-for (let i = 0; i < nav-link.length; i++) {
-  categoryButtonIds[i] = document.getElementById(nav-link[i].id);
+for (let i = 0; i < categoryButtons.length; i++) {
+  categoryButtonIds[i] = document.getElementById(categoryButtons[i].id);
   categoryButtonIds[i].addEventListener('click', () => {
-    hideSections(nav-link[i].id);
+    hideSections(categoryButtons[i].id);
   })
 }
 
