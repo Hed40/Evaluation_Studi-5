@@ -2,6 +2,7 @@
 title: Galerie photo
 layout: layout.njk
 style: /css/galery.css
+script: /js/galery.js
 ---
 <main class="main_galery">
     <container class = "container_galery">
@@ -17,7 +18,7 @@ style: /css/galery.css
                         {% set currentCategory = photo.data.category %}
                         {% if currentCategory not in categories %}
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link categoryButton" id="{{ currentCategory }}" data-bs-toggle="pill" data-bs-target="#pills-{{ currentCategory }}" type="button" role="tab" aria-controls="pills-Wedding" aria-selected="true">{{ currentCategory }}</button>
+                                <button class="nav-link categoryButton " id="{{ currentCategory }}" data-bs-toggle="pill" data-bs-target="#pills-Autre" type="button" role="tab" aria-controls="pills-Wedding" aria-selected="true">{{ currentCategory }}</button>
                             </li>
                             {% set categories = (categories.push(currentCategory), categories) %}
                         {% endif %}
@@ -45,18 +46,18 @@ style: /css/galery.css
                     <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
                 {% endfor %}
             </div>
-            <div class="galeryShow" id="Wedding">
+            <div class="galeryShow" id="Mariage">
                 {% for photo in collections.photoMariage %}
                     <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
                 {% endfor %}
             </div>
-            <div class="galeryShow" id="Baptism">
-                {% for photo in collections.photoBaptism %}
+            <div class="galeryShow" id="Baptême">
+                {% for photo in collections.photoBapteme %}
                     <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
                 {% endfor %}
             </div>
-            <div class="galeryShow" id="Baby">
-                {% for photo in collections.photoBaby %}
+            <div class="galeryShow" id="Bébé">
+                {% for photo in collections.photoBebe %}
                     <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
                 {% endfor %}
             </div>
@@ -65,8 +66,8 @@ style: /css/galery.css
                     <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
                 {% endfor %}
             </div>
-            <div class="galeryShow" id="Family">
-                {% for photo in collections.photoFamily %}
+            <div class="galeryShow" id="Famille">
+                {% for photo in collections.photoFamille %}
                     <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
                 {% endfor %}
             </div>
@@ -75,8 +76,8 @@ style: /css/galery.css
                     <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
                 {% endfor %}
             </div>
-            <div class="galeryShow" id="Pregnant">
-                {% for photo in collections.photoPregnant %}
+            <div class="galeryShow" id="Grossesse">
+                {% for photo in collections.photoGrossesse %}
                     <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
                 {% endfor %}
             </div>

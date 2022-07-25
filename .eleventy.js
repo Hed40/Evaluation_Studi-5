@@ -10,31 +10,31 @@ module.exports = function(eleventyConfig) {
   })
 
   eleventyConfig.addCollection("photoBapteme", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("./src/content/photographies/*.md").filter(photo => photo.data.photoCategory == "Baptême");
+    return collectionApi.getFilteredByGlob("./src/content/photographies/*.md").filter(photo => photo.data.category == "Baptême");
   })
 
   eleventyConfig.addCollection("photoBebe", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("./src/content/photographies/*.md").filter(photo => photo.data.photoCategory == "Bébé");
+    return collectionApi.getFilteredByGlob("./src/content/photographies/*.md").filter(photo => photo.data.category == "Bébé");
   })
 
   eleventyConfig.addCollection("photoCouple", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("./src/content/photographies/*.md").filter(photo => photo.data.photoCategory == "Couple");
+    return collectionApi.getFilteredByGlob("./src/content/photographies/*.md").filter(photo => photo.data.category == "Couple");
   })
 
   eleventyConfig.addCollection("photoFamille", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("./src/content/photographies/*.md").filter(photo => photo.data.photoCategory == "Famille");
+    return collectionApi.getFilteredByGlob("./src/content/photographies/*.md").filter(photo => photo.data.category == "Famille");
   })
 
   eleventyConfig.addCollection("photoGrossesse", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("./src/content/photographies/*.md").filter(photo => photo.data.photoCategory == "Grossesse");
+    return collectionApi.getFilteredByGlob("./src/content/photographies/*.md").filter(photo => photo.data.category == "Grossesse");
   })
 
   eleventyConfig.addCollection("photoMariage", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("./src/content/photographies/*.md").filter(photo => photo.data.photoCategory == "Mariage");
+    return collectionApi.getFilteredByGlob("./src/content/photographies/*.md").filter(photo => photo.data.category == "Mariage");
   })
 
   eleventyConfig.addCollection("photoPortrait", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("./src/content/photographies/*.md").filter(photo => photo.data.photoCategory == "Portrait");
+    return collectionApi.getFilteredByGlob("./src/content/photographies/*.md").filter(photo => photo.data.category == "Portrait");
   })
   eleventyConfig.addWatchTarget("./src/scss/");
 
