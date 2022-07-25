@@ -38,9 +38,9 @@ fields:
     required: false
   label: Toast_body
 pages:
-- src/content/prestations/Artistique.md
 - src/content/prestations/Famille.md
 - src/content/prestations/Grossesse.md
 - src/content/prestations/J'immortalise.md
 - src/content/prestations/Juste moi.md
 - src/content/prestations/Pour deux.md
+- src/content/prestations/artist_1.md
