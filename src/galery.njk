@@ -3,71 +3,72 @@ title: Galerie photo
 layout: layout.njk
 style: /css/galery.css
 ---
-<main class="main_galery">
-    <container class = "container_galery">
-        <section class="section_navigation">
-            <div class= "title_capt">
-                <h1>{{site.galeryTitle}}</h1>
+<container class = "container_galery">
+    <section class="section_navigation">
+        <div class= "title_capt">
+            <h1>{{site.galeryTitle}}</h1>
+        </div>
+        <div class="galerieCategories">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                {% set categories = [] %}
+                {% for photo in collections.photoAll %}
+                    {% set currentCategory = photo.data.category %}
+                    {% if currentCategory not in categories %}
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link categoryButton " id="{{ currentCategory }}" data-bs-toggle="pill" data-bs-target="#pills-Autre" type="button" role="tab" aria-controls="pills-Wedding" aria-selected="true">{{ currentCategory }}</button>
+                        </li>
+                        {% set categories = (categories.push(currentCategory), categories) %}
+                    {% endif %}
+                {% endfor %}
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link categoryButton active" id="All" data-bs-toggle="pill" data-bs-target="#pills-All" type="button" role="tab" aria-controls="pills-All" aria-selected="false">Toutes</button>
+                </li>
+            </ul>
+        </section>
+        <section class="section_photo">
+
+            <div class="galeryShow" id="All">
+                {% for photo in collections.photoAll %}
+                    <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
+                {% endfor %}
             </div>
-            <div class="galerieCategories">
-                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                    {% set categories = [] %}
-                    {% for photo in collections.photoAll %}
-                        {% set currentCategory = photo.data.category %}
-                        {% if currentCategory not in categories %}
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link categoryButton " id="{{ currentCategory }}" data-bs-toggle="pill" data-bs-target="#pills-Autre" type="button" role="tab" aria-controls="pills-Wedding" aria-selected="true">{{ currentCategory }}</button>
-                            </li>
-                            {% set categories = (categories.push(currentCategory), categories) %}
-                        {% endif %}
-                    {% endfor %}
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link categoryButton active" id="All" data-bs-toggle="pill" data-bs-target="#pills-All" type="button" role="tab" aria-controls="pills-All" aria-selected="false">Toutes</button>
-                    </li>
-                </ul>
-            </section>
-            <section class="section_photo">
-                
-                <div class="galeryShow" id="All">
-                    {% for photo in collections.photoAll %}
-                        <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
-                    {% endfor %}
-                </div>
-                <div class="galeryShow" id="Mariage">
-                    {% for photo in collections.photoMariage %}
-                        <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
-                    {% endfor %}
-                </div>
-                <div class="galeryShow" id="Baptême">
-                    {% for photo in collections.photoBapteme %}
-                        <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
-                    {% endfor %}
-                </div>
-                <div class="galeryShow" id="Bébé">
-                    {% for photo in collections.photoBebe %}
-                        <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
-                    {% endfor %}
-                </div>
-                <div class="galeryShow" id="Couple">
-                    {% for photo in collections.photoCouple %}
-                        <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
-                    {% endfor %}
-                </div>
-                <div class="galeryShow" id="Famille">
-                    {% for photo in collections.photoFamille %}
-                        <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
-                    {% endfor %}
-                </div>
-                <div class="galeryShow" id="Portrait">
-                    {% for photo in collections.photoPortrait %}
-                        <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
-                    {% endfor %}
-                </div>
-                <div class="galeryShow" id="Grossesse">
-                    {% for photo in collections.photoGrossesse %}
-                        <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
-                    {% endfor %}
-                </div>
-            </section>
-        </container>
-    </main>
+            <div class="galeryShow" id="Mariage">
+                {% for photo in collections.photoMariage %}
+                    <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
+                {% endfor %}
+            </div>
+            <div class="galeryShow" id="Baptême">
+                {% for photo in collections.photoBapteme %}
+                    <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
+                {% endfor %}
+            </div>
+            <div class="galeryShow" id="Bébé">
+                {% for photo in collections.photoBebe %}
+                    <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
+                {% endfor %}
+            </div>
+            <div class="galeryShow" id="Couple">
+                {% for photo in collections.photoCouple %}
+                    <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
+                {% endfor %}
+            </div>
+            <div class="galeryShow" id="Famille">
+                {% for photo in collections.photoFamille %}
+                    <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
+                {% endfor %}
+            </div>
+            <div class="galeryShow" id="Portrait">
+                {% for photo in collections.photoPortrait %}
+                    <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
+                {% endfor %}
+            </div>
+            <div class="galeryShow" id="Grossesse">
+                {% for photo in collections.photoGrossesse %}
+                    <img class="img_galery" src="{{ photo.data.photographie | url }}" alt="{{ photo.data.category | safe }}">
+                {% endfor %}
+            </div>
+        </section>
+    </container>
+    <button type="button" class="rounded-circle " id="btn-back-to-top">
+        <img class="arrow_img" src="{{'/img/logo/arrow-up.png'}}"></img>
+    </button>

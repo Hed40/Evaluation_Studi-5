@@ -3,8 +3,7 @@ title: Mes prestations
 layout: layout.njk
 style: /css/prestations.css
 ---
-<main class="main_prestations">
-  <container class="container_prestations">
+ <container class="container_prestations">
     <section class="section_prestations">
       <div class= "title_capt">
         <h1>{{site.priceTitle}}</h1>
@@ -44,6 +43,6 @@ style: /css/prestations.css
       {% endfor %}
     </section>
   </container>
-</main>
-
- 
+  <button type="button" class="rounded-circle " id="btn-back-to-top">
+    <img class="arrow_img" src="{{'/img/logo/arrow-up.png'}}"></img>
+  </button>
