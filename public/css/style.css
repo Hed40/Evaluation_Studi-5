@@ -6,63 +6,16 @@ body {
   background-image: url(../img/rain.jpg);
   background-attachment: fixed;
   background-size: auto;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
 }
 
-header{
-  display: flex;
-  height: 5vh;
+header {
   background-color: #3c63826c;
   color: #ffffff;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
-  rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
-}
-
-main {
-  display: flex;
-  justify-content: center;
-}
-
-.container_welcome {
-  display: flex;
-  overflow: auto;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 45%;
-  height: 80vh;
-}
-
-.section_welcome {
-  display: flex;
-  background-color: #3c63826c;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-  width: 60%;
-  height: 60%;
-}
-
-.section_logo{
-  display: flex;
-  width: 50%;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.section_logo > p {
-  margin-top: 20px;
-  color: #ffffff;
-}
-
-h1 {
-  color: white;
-  font-family: "K2D", sans-serif;
-  font-size: larger;
-  text-align: center;
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 
 .logo_camera {
@@ -71,39 +24,83 @@ h1 {
   animation-direction: normal;
 }
 
-.logo_Cc {
-  max-width: 250px;
-  margin: 0%;
+main {
+  display: flex;
+  justify-content: center;
 }
+
+h1 {
+  color: white;
+  font-family: "K2D", sans-serif;
+  font-size: larger;
+  text-align: center;
+}
+/* Footer*/
 
 footer {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   color: #3c6382;
-  height: 10vh;
   bottom: 0;
   background-color: #ffffff;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.social_mesage {
+  padding: 10px;
+}
 
-.rounded-circle,
-.border-light {
-  background-color: #3c63826c;
-  background-size: 40px;
-  background-repeat: no-repeat;
-  position: fixed;
-  bottom: 150px;
-  right: 250px;
-  width: 60px;
-  height: 60px;
+.logo_social {
+  display: flex;
+}
+
+.logo_Cc_blue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo_Cc_blue > img {
+  width: 135px;
+  padding: 1rem;
+}
+
+.logo_text{
+  font-family: "K2D", sans-serif;
+  color: #3c6382;
+  font-size: small;
+}
+
+@media screen and (min-width: 375px) and (orientation: portrait) {
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #3c6382;
+  bottom: 0;
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+
+.social_message,
+.copyright_message{
+  font-family: "K2D", sans-serif;
+  color: #3c6382;
+  font-size: medium;
+  text-align: center;
+}
+
+.logo_Cc_blue {
   display: none;
-  border: #3c6382;
+  flex-direction: column;
+  align-items: center;
+}
 }
 
-.arrow_img {
-  width: 30px;
-  height: 30px;
-}

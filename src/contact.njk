@@ -4,44 +4,57 @@ layout: layout.njk
 style: /css/contact.css
 script: /js/validationForm.js
 ---
-<container class="container_contact">
-    <section class="section_contact">
+<aside class="container_info">
+    <section class="section_info">
         <div class= "title_capt">
-            <h1>{{site.contactTitle}}</h1>
+            <h1>{{site.contactTitle1}}</h1>
         </div>
-        <form class=" needs-validation" id="ContactForm" novalidate>
-            <div class="lastname mb-2">
-                <label for="lastName" class="form-label">Nom</label>
-                <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Nom">
-                <div class="insvalid-feedback">Veuillez saisir votre nom.</div>
+        <div class="informations">
+            <p>Pour toutes demandes de devis et/ou prise de rendez-vous, vous pouvez me contacter directement via : </p>
+            <p> Le formulaire de contacte ci-joint.</p>
+            <p class="and"><b>ou</b></p>
+            <div class="postal_adress">
+                <p>Par courier, à l'adresse suivante :</p>
+                <p><b>Charles Cantin - Photographie</b><br>10 rue du Focus<br>40160 Parentis-en-Born</p>
             </div>
-            <div class="firstname mb-2">
-                <label for="firstname" class="form-label">Prénom</label>
-                <input type="text" class="form-control" name="firstName" id="firstName" placeholder="Prénom">
-                <div class="invalid-feedback">
-                    Veuillez saisir votre prénom.
+            <p class="and"><b>ou</b></p>
+            <div class="phone">
+                <p>Par téléphone au numéro suivant :</p>
+                <p><b>06 06 07 07 99</b></p>
+            </div>
+        </section>
+    </aside>
+    <container class="container_form">
+        <section class="section_form">
+            <div class= "title_capt">
+                <h1>{{site.contactTitle2}}</h1>
+            </div>
+            <form class=" needs-validation" id="ContactForm" novalidate>
+                <div class="lastname mb-2">
+                    <label for="lastName" class="form-label"></label>
+                    <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Nom">
+                    <div class="invalid-feedback">Veuillez saisir votre nom.</div>
                 </div>
-            </div>
+                <div class="firstname mb-2">
+                    <label for="firstname" class="form-label"></label>
+                    <input type="text" class="form-control" name="firstName" id="firstName" placeholder="Prénom">
+                    <div class="invalid-feedback">Veuillez saisir votre prénom.</div>
+                </div>
 
-            <div class="email mb-2">
-                <label for="email" class="form-label">E-mail</label>
-                <input type="email" class="form-control" name="email" id="email" placeholder="j.dupont@gmail.com">
-                <div class="invalid-feedback">
-                    Veuillez saisir votre e-mail.
+                <div class="email mb-2">
+                    <label for="email" class="form-label"></label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="j.dupont@gmail.com">
+                    <div class="invalid-feedback">Veuillez saisir votre e-mail.</div>
                 </div>
-            </div>
-            <div class="phoneNumber mb-2">
-                <label for="phoneNumber" class="form-label">Téléphone</label>
-                <input type="phoneNumber" class="form-control" name="phoneNumber" id="phoneNumber">
-                <div class="invalid-feedback">
-                    Veuillez saisir votre numéro de téléphone.
-                </div>
-            </div>
-            <div class="Message mb-2">
-                <label for="Message" class="form-label">Votre Message</label>
-                <textarea type="form-control" class="form-control" name="Message" id="Message" rows="6" placeholder="Veuillez écrire votre message ici..."></textarea>
-                <div class="invalid-feedback">
-                    Veuillez saisir au moins 20 caractères.
+                <div class="phoneNumber mb-2">
+                    <label for="phoneNumber" class="form-label"></label>
+                    <input type="phoneNumber" class="form-control" name="phoneNumber" id="phoneNumber" placeholder="n° de téléphone">
+                    <div class="invalid-feedback">Veuillez saisir votre numéro de téléphone.</div>
+                </div>s
+                <div class="Message mb-2">
+                    <label for="Message" class="form-label"></label>
+                    <textarea type="form-control" class="form-control" name="Message" id="Message" rows="6" placeholder="Veuillez écrire votre message ici..."></textarea>
+                    <div class="invalid-feedback">Veuillez saisir au moins 20 caractères.</div>
                 </div>
                 <div class="submit">
                     <button type="submit" class="btn btn-primary ">Envoyer</button>

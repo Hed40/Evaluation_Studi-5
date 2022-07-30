@@ -2,20 +2,17 @@
   
   .container_prestations {
     display: flex;
+    justify-content: center;
     background-color: #3c63826c;
-    overflow: auto;
     border-radius: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    flex-direction: column;
-    align-items: center;
     width: 45%;
   }
 
   .section_prestations {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 60%;
   }
 
@@ -25,10 +22,8 @@
     font-size: medium;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 20px;
     border-radius: 5px;
     padding: 8px;
-    width: 50%;
     background-color: white;
   }
 
@@ -69,6 +64,132 @@
     text-align: center;
     border: 1.5px solid;
     border-radius: 4px;
+    width: auto;
+  }
+
+  .card-body {
+display: flex;
+flex-direction: column;
+  }
+
+  .image {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #images_presta {
+    display: flex;
+    width: 80%;
+    justify-items: center;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .logo_info {
+    display: none;
+    width: 20px;
+    height: 20px;
+  }
+
+  .combo_title_info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .rounded-circle,
+  .border-light {
+  background-color: #3c63826c;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  position: fixed;
+  bottom: 130px;
+  right: 451px;
+  width: 60px;
+  height: 60px;
+  display: none;
+  border: #3c6382;
+  }
+
+  .arrow_img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (min-width: 375px) and (orientation: portrait){
+  .container_prestations {
+    display: flex;
+    background-color: #3c63826c;
+    overflow: auto;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+  }
+
+  .section_prestations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+  }
+
+  h1 {
+    color: #3c6382;
+    font-family: "K2D", sans-serif;
+    font-size: medium;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: white;
+  }
+
+  h2 {
+    color: #3c6382;
+    font-family: "K2D", sans-serif;
+    font-size: larger;
+    text-align: center;
+  }
+
+  #description {
+    color: #3c6382;
+    font-family: "K2D", sans-serif;
+    font-size: small;
+    text-align: left;
+  }
+
+  #condition {
+    color: #3c6382;
+    font-family: "K2D", sans-serif;
+    font-size: x-small;
+    text-align: left;
+  }
+
+  .title_capt {
+    display: flex;
+    justify-content: center;
+  }
+
+  #price {
+    display: flex;
+    background-color: #3c6382;
+    justify-content: center;
+    color: white;
+    font-family: "K2D", sans-serif;
+    font-size: larger;
+    font-weight: 500;
+    text-align: center;
+    border: 1.5px solid;
+    border-radius: 4px;
+    width: 50%;
   }
   .card-body {
     display: flex;
@@ -93,11 +214,13 @@
   p {
     margin-bottom: 0;
   }
+
   .d-flex {
     justify-content: space-around;
   }
+
   .logo_info {
-    display: flex;
+    display: none;
     width: 20px;
     height: 20px;
   }
@@ -106,4 +229,23 @@
     display: flex;
     justify-content: space-between;
   }
+
+  .rounded-circle,
+  .border-light {
+    background-color: #3c63826c;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 130px;
+    right: 12px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    border: #3c6382;
+  }
+  
+    .arrow_img {
+      width: 25px;
+      height: 25px;
+    }
 }
