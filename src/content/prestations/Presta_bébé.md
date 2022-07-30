@@ -1,5 +1,5 @@
 ---
-image: "/uploads/baby_4.jpg"
+image: "/uploads/bebe.png"
 titre: '"Mon bébé"'
 description: Photo d'enfant jusqu'à 3 ans ( photo à domicile)
 prix: 100 €
