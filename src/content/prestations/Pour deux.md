@@ -1,5 +1,5 @@
 ---
-image: "/uploads/romantic-g1256df4b5_1280.jpg"
+image: "/uploads/portrait_1.jpg"
 titre: '" Pour deux"'
 description: Pour deux personnes, en extérieur ou en studio.
 prix: 195 €
