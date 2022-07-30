@@ -1,5 +1,4 @@
 @media screen and (min-width: 1200px) and (orientation: landscape) {
-  
   .container_prestations {
     display: flex;
     justify-content: center;
@@ -68,8 +67,8 @@
   }
 
   .card-body {
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 
   .image {
@@ -87,7 +86,6 @@ flex-direction: column;
   }
 
   p {
-    margin-bottom: 0;
   }
 
   .logo_info {
@@ -103,16 +101,16 @@ flex-direction: column;
 
   .rounded-circle,
   .border-light {
-  background-color: #3c63826c;
-  background-size: 40px;
-  background-repeat: no-repeat;
-  position: fixed;
-  bottom: 130px;
-  right: 451px;
-  width: 60px;
-  height: 60px;
-  display: none;
-  border: #3c6382;
+    background-color: #3c63826c;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 130px;
+    right: 451px;
+    width: 60px;
+    height: 60px;
+    display: none;
+    border: #3c6382;
   }
 
   .arrow_img {
@@ -121,7 +119,7 @@ flex-direction: column;
   }
 }
 
-@media screen and (min-width: 375px) and (orientation: portrait){
+@media screen and (min-width: 375px) and (orientation: portrait) {
   .container_prestations {
     display: flex;
     background-color: #3c63826c;
@@ -243,9 +241,9 @@ flex-direction: column;
     display: none;
     border: #3c6382;
   }
-  
-    .arrow_img {
-      width: 25px;
-      height: 25px;
-    }
+
+  .arrow_img {
+    width: 25px;
+    height: 25px;
+  }
 }
