@@ -71,6 +71,28 @@ footer {
   font-size: small;
 }
 
+.socials{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.copyright{
+  display: flex;
+  padding-bottom: 5px;
+}
+
+.social_message,
+.copyright_message{
+  display: flex;
+  font-family: "K2D", sans-serif;
+  color: #3c6382;
+  font-size: small;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 5px;
+}
+
 @media screen and (min-width: 375px) and (orientation: portrait) {
 
 footer {
@@ -83,12 +105,26 @@ footer {
   border-radius: 3px;
 }
 
+.socials{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.copyright{
+  display: flex;
+  padding-bottom: 5px;
+}
+
 .social_message,
 .copyright_message{
+  display: flex;
   font-family: "K2D", sans-serif;
   color: #3c6382;
-  font-size: medium;
+  font-size: small;
   text-align: center;
+  flex-direction: column;
+  padding-top: 5px;
 }
 
 .logo_Cc_blue {

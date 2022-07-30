@@ -134,7 +134,7 @@
     background-color: #3c63826c;
     border-radius: 20px;
     margin-top: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     width: 95%;
   }
 
@@ -237,8 +237,8 @@
   background-size: 40px;
   background-repeat: no-repeat;
   position: fixed;
-  bottom: 130px;
-  right: 12px;
+  bottom: 140px;
+  right: 10px;
   width: 50px;
   height: 50px;
   display: none;

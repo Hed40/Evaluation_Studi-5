@@ -25,7 +25,9 @@
   display: flex;
   width: 50%;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+  align-items: center
 }
 
 .section_logo > p {
