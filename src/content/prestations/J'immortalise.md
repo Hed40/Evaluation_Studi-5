@@ -1,7 +1,7 @@
 ---
 image: "/uploads/mariage.png"
-titre: '"J''immortalise l''événement " sur mesure.'
-description: Prestation de mariage ou baptème sur devis.
+titre: '"J''immortalise l''événement "'
+description: Prestation de mariage ou baptême sur mesure mais sur devis.
 conditions: ''
 prix: Sur devis
 toast_title: ''
