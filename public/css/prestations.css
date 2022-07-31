@@ -1,4 +1,5 @@
-@media screen and (min-width: 375px) and (orientation: portrait) { /*Mobile First*/
+@media screen and (min-width: 375px) and (orientation: portrait) {
+  /*Mobile First*/
   .container_prestations {
     display: flex;
     background-color: #3c63826c;
@@ -15,10 +16,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 70%;
+    width: 90%;
   }
 
-  h1 {
+  h2 {
     color: #3c6382;
     font-family: "K2D", sans-serif;
     font-size: large;
@@ -29,14 +30,16 @@
     background-color: white;
   }
 
-  h2 {
+  h3 {
     color: #3c6382;
     font-family: "K2D", sans-serif;
-    font-size: larger;
+    text-shadow: #3c6382;
+    font-size: large;
     text-align: center;
   }
 
   #description {
+    display: flex;
     color: #3c6382;
     font-family: "K2D", sans-serif;
     font-size: small;
@@ -69,7 +72,7 @@
     width: 50%;
   }
 
-  .card-body{
+  .card-body {
     display: flex;
     height: 100%;
     align-items: center;
@@ -87,7 +90,6 @@
     display: flex;
     width: 80%;
     justify-items: center;
-  
   }
 
   p {
@@ -97,7 +99,7 @@
   }
 
   .logo_info {
-    display: none;
+    /*display: none;*/
     width: 20px;
     height: 20px;
   }
@@ -127,41 +129,52 @@
   }
 }
 
-
-@media screen and (min-width: 820px) and (orientation: landscape) { /*tablet and Desktop*/
+@media screen and (min-width: 820px) and (orientation: landscape) {
+  /*tablet and Desktop*/
   .container_prestations {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     background-color: #3c63826c;
     border-radius: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 45%;
+    width: 50%;
   }
 
-  h1 {
-    color: #3c6382;
-    font-family: "K2D", sans-serif;
-    font-size: medium;
-    text-align: center;
-    margin-top: 20px;
-    border-radius: 5px;
-    padding: 8px;
-    background-color: white;
+  .section_prestations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 
   h2 {
     color: #3c6382;
     font-family: "K2D", sans-serif;
-    font-size: larger;
+    font-size: large;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: white;
+  }
+
+  h3 {
+    color: #3c6382;
+    font-family: "K2D", sans-serif;
+    font-size: medium;
     text-align: left;
   }
 
   #description {
+    display: flex;
+    align-items: center;
     color: #3c6382;
     font-family: "K2D", sans-serif;
     font-size: small;
     text-align: left;
+    height: 60%;
   }
 
   #condition {
@@ -178,8 +191,15 @@
 
   #price {
     display: flex;
+    justify-content: flex-end;
+    height: 25%;
+  }
+
+  .card-text-Price {
+    display: flex;
     background-color: #3c6382;
     justify-content: center;
+    align-items: center;
     color: white;
     font-family: "K2D", sans-serif;
     font-size: larger;
@@ -187,7 +207,8 @@
     text-align: center;
     border: 1.5px solid;
     border-radius: 4px;
-    width: auto;
+    width: 50%;
+    height: 100%;
   }
 
   .card-body {
@@ -210,14 +231,15 @@
   }
 
   .logo_info {
-    display: none;
+    /*display: none;*/
     width: 20px;
     height: 20px;
   }
 
   .combo_title_info {
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    height: 20%;
   }
 
   .rounded-circle,
@@ -238,5 +260,8 @@
     width: 20px;
     height: 20px;
   }
+  .card {
+    display: flex;
+    width: 45%;
+  }
 }
-

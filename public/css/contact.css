@@ -24,7 +24,7 @@
     flex-wrap: wrap;
   }
 
-  h1 {
+  h2 {
     color: #3c6382;
     font-family: "K2D", sans-serif;
     font-size: medium;
@@ -33,13 +33,6 @@
     border-radius: 8px;
     padding: 8px;
     background-color: white;
-  }
-
-  h2 {
-    color: #3c6382;
-    font-family: "K2D", sans-serif;
-    font-size: medium;
-    text-align: left;
   }
 
   .title_capt {
@@ -154,7 +147,7 @@
     width: 60%;
   }
 
-  h1 {
+  h2 {
     color: #3c6382;
     font-family: "K2D", sans-serif;
     font-size: medium;
@@ -163,13 +156,6 @@
     border-radius: 8px;
     padding: 8px;
     background-color: white;
-  }
-
-  h2 {
-    color: #3c6382;
-    font-family: "K2D", sans-serif;
-    font-size: medium;
-    text-align: left;
   }
 
   .title_capt {
@@ -241,9 +227,11 @@
     text-shadow: #3c6382;
     font-size: larger;
   }
+
   .postal_adress {
     justify-content: center;
   }
+
   .rounded-circle,
   .border-light {
     display: none;
@@ -258,6 +246,7 @@
     display: none;
     border: #3c6382;
   }
+
   #btn-back-to-top,
   .arrow_img {
     display: none;
@@ -289,7 +278,7 @@
     width: 60%;
   }
 
-  h1 {
+  h2 {
     color: #3c6382;
     font-family: "K2D", sans-serif;
     font-size: medium;
@@ -298,13 +287,6 @@
     border-radius: 8px;
     padding: 8px;
     background-color: white;
-  }
-
-  h2 {
-    color: #3c6382;
-    font-family: "K2D", sans-serif;
-    font-size: medium;
-    text-align: left;
   }
 
   .title_capt {
