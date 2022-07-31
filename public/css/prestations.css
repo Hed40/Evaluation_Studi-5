@@ -1,119 +1,4 @@
-@media screen and (min-width: 1200px) and (orientation: landscape) {
-  .container_prestations {
-    display: flex;
-    justify-content: center;
-    background-color: #3c63826c;
-    border-radius: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 45%;
-  }
-
-  h1 {
-    color: #3c6382;
-    font-family: "K2D", sans-serif;
-    font-size: medium;
-    text-align: center;
-    margin-top: 20px;
-    border-radius: 5px;
-    padding: 8px;
-    background-color: white;
-  }
-
-  h2 {
-    color: #3c6382;
-    font-family: "K2D", sans-serif;
-    font-size: larger;
-    text-align: left;
-  }
-
-  #description {
-    color: #3c6382;
-    font-family: "K2D", sans-serif;
-    font-size: small;
-    text-align: left;
-  }
-
-  #condition {
-    color: #3c6382;
-    font-family: "K2D", sans-serif;
-    font-size: x-small;
-    text-align: left;
-  }
-
-  .title_capt {
-    display: flex;
-    justify-content: center;
-  }
-
-  #price {
-    display: flex;
-    background-color: #3c6382;
-    justify-content: center;
-    color: white;
-    font-family: "K2D", sans-serif;
-    font-size: larger;
-    font-weight: 500;
-    text-align: center;
-    border: 1.5px solid;
-    border-radius: 4px;
-    width: auto;
-  }
-
-  .card-body {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .image {
-    display: flex;
-    max-width: 150px;
-    max-height: 150px;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  #images_presta {
-    display: flex;
-    width: 80%;
-    justify-items: center;
-  }
-
-  p {
-  }
-
-  .logo_info {
-    display: none;
-    width: 20px;
-    height: 20px;
-  }
-
-  .combo_title_info {
-    display: flex;
-    justify-content: center;
-  }
-
-  .rounded-circle,
-  .border-light {
-    background-color: #3c63826c;
-    background-size: 40px;
-    background-repeat: no-repeat;
-    position: fixed;
-    bottom: 130px;
-    right: 451px;
-    width: 60px;
-    height: 60px;
-    display: none;
-    border: #3c6382;
-  }
-
-  .arrow_img {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-@media screen and (min-width: 375px) and (orientation: portrait) {
+@media screen and (min-width: 375px) and (orientation: portrait) { /*Mobile First*/
   .container_prestations {
     display: flex;
     background-color: #3c63826c;
@@ -228,16 +113,130 @@
     background-size: 40px;
     background-repeat: no-repeat;
     position: fixed;
-    bottom: 170px;
+    bottom: 155px;
     right: 12px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: none;
     border: #3c6382;
   }
 
   .arrow_img {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
   }
 }
+
+
+@media screen and (min-width: 820px) and (orientation: landscape) { /*tablet and Desktop*/
+  .container_prestations {
+    display: flex;
+    justify-content: center;
+    background-color: #3c63826c;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 45%;
+  }
+
+  h1 {
+    color: #3c6382;
+    font-family: "K2D", sans-serif;
+    font-size: medium;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: white;
+  }
+
+  h2 {
+    color: #3c6382;
+    font-family: "K2D", sans-serif;
+    font-size: larger;
+    text-align: left;
+  }
+
+  #description {
+    color: #3c6382;
+    font-family: "K2D", sans-serif;
+    font-size: small;
+    text-align: left;
+  }
+
+  #condition {
+    color: #3c6382;
+    font-family: "K2D", sans-serif;
+    font-size: x-small;
+    text-align: left;
+  }
+
+  .title_capt {
+    display: flex;
+    justify-content: center;
+  }
+
+  #price {
+    display: flex;
+    background-color: #3c6382;
+    justify-content: center;
+    color: white;
+    font-family: "K2D", sans-serif;
+    font-size: larger;
+    font-weight: 500;
+    text-align: center;
+    border: 1.5px solid;
+    border-radius: 4px;
+    width: auto;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image {
+    display: flex;
+    max-width: 150px;
+    max-height: 150px;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #images_presta {
+    display: flex;
+    width: 80%;
+    justify-items: center;
+  }
+
+  .logo_info {
+    display: none;
+    width: 20px;
+    height: 20px;
+  }
+
+  .combo_title_info {
+    display: flex;
+    justify-content: center;
+  }
+
+  .rounded-circle,
+  .border-light {
+    background-color: #3c63826c;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 140px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    display: none;
+    border: #3c6382;
+  }
+
+  .arrow_img {
+    width: 20px;
+    height: 20px;
+  }
+}
+

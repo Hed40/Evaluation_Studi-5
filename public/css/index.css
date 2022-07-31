@@ -1,3 +1,5 @@
+@media screen and (min-width: 820px) and (orientation: landscape){
+
 .container_welcome {
   display: flex;
   overflow: auto;
@@ -17,13 +19,12 @@
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  width: 60%;
+  width: 95%;
   height: 60%;
 }
 
 .section_logo{
   display: flex;
-  width: 50%;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
@@ -38,6 +39,7 @@
 .logo_Cc {
   max-width: 250px;
   margin: 0%;
+}
 }
 
 @media screen and (min-width: 375px) and (orientation: portrait){
@@ -64,9 +66,10 @@
   
   .section_logo{
     display: flex;
+    flex-direction: column;
     width: 50%;
     flex-wrap: nowrap;
-    justify-content: center;
+    align-items: center
   }
 
   .section_logo > p {
