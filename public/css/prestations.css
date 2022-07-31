@@ -134,11 +134,10 @@
   .container_prestations {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     background-color: #3c63826c;
     border-radius: 20px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     width: 50%;
   }
 
@@ -192,7 +191,7 @@
   #price {
     display: flex;
     justify-content: flex-end;
-    height: 25%;
+    height: 35%;
   }
 
   .card-text-Price {
@@ -202,12 +201,11 @@
     align-items: center;
     color: white;
     font-family: "K2D", sans-serif;
-    font-size: larger;
-    font-weight: 500;
+    font-size: medium;
     text-align: center;
     border: 1.5px solid;
-    border-radius: 4px;
-    width: 50%;
+    border-radius: 6px;
+    width: 40%;
     height: 100%;
   }
 
