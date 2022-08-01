@@ -2,7 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  min-height: 100vh;
   background-image: url(../img/rain.jpg);
   background-attachment: fixed;
   background-size: auto;
@@ -24,6 +24,7 @@ header {
 }
 
 main {
+  flex: 1;
   display: flex;
   justify-content: center;
 }
