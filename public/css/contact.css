@@ -1,4 +1,5 @@
-@media screen and (min-width: 375px) and (orientation: portrait) { /*Mobile First*/
+@media screen and (min-width: 375px) and (orientation: portrait) {
+  /*Mobile First*/
   /* Contact Form*/
 
   main {
@@ -110,7 +111,7 @@
     background-size: 40px;
     background-repeat: no-repeat;
     position: fixed;
-    bottom: 165px;
+    bottom: 171px;
     right: 10px;
     width: 50px;
     height: 50px;
@@ -124,7 +125,8 @@
   }
 }
 
-@media screen and (max-width: 1199px) and (orientation: landscape) { /* Tablet and Descktop*/
+@media screen and (max-width: 1199px) and (orientation: landscape) {
+  /* Tablet and Descktop*/
   /* Contact Form*/
 
   .container_form {
@@ -208,7 +210,7 @@
     background-color: white;
     border-radius: 7px;
     width: 20rem;
- 
+
     margin-top: 20px;
   }
 
@@ -251,7 +253,8 @@
   }
 }
 
-@media screen and (min-width: 1200px) and (orientation: landscape) { /* Tablet and Descktop*/
+@media screen and (min-width: 1200px) and (orientation: landscape) {
+  /* Tablet and Descktop*/
   /* Contact Form*/
 
   .container_form {
@@ -378,4 +381,3 @@
     height: 25px;
   }
 }
-

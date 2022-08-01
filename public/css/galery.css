@@ -1,4 +1,4 @@
-@media screen and (min-width: 375px) and (orientation: portrait) {
+@media screen and (min-width: 320px) and (orientation: portrait) {
   .container_galery {
     display: flex;
     flex-direction: column;
@@ -14,13 +14,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 95%;
+    width: 92%;
   }
 
   .section_photo {
     display: flex;
-    width: 95%;
+    justify-content: space-around;
     flex-wrap: wrap;
+    width: 97%;
   }
 
   h2 {
@@ -82,15 +83,20 @@
     border-radius: 8px;
     width: 71vw;
     height: 52vw;
-    margin: 10px;
-    border: 1.5px solid #3c6382;
+    margin: 24px;
+    border: 3px solid #3c6382;
   }
 
   .galeryShow {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    border-radius: 8px;
+    justify-content: space-evenly;
+    background-color: white;
+    margin: -9px 5px 10px 5px;
+    width: 95%;
   }
+
   .categoryButton {
     color: #3c6382;
   }
@@ -254,7 +260,7 @@
     overflow: auto;
     border-radius: 20px;
     margin: 10px 5px 10px 5px;
-    width: 50%;
+    width: 100%;
   }
 
   .section_navigation {
@@ -335,7 +341,8 @@
   .img_galery {
     display: flex;
     border-radius: 8px;
-    width: 40%;
+    width: 14vw;
+    height: 10vw;
     margin: 19px;
     border: 3px solid #3c6382;
   }

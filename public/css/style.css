@@ -40,7 +40,11 @@ footer {
   background-color: #ffffff;
 }
 
-.social_mesage {
+footer > .copyright {
+  display: flex;
+}
+
+.social_message {
   padding: 10px;
 }
 
@@ -69,6 +73,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 50%;
 }
 
 .copyright{
@@ -121,7 +126,17 @@ footer {
   padding-bottom: 5px;
 }
 
-.social_message,
+.social_message{
+  display: flex;
+  font-family: "K2D", sans-serif;
+  color: #3c6382;
+  font-size: medium;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+
 .copyright_message{
   display: flex;
   font-family: "K2D", sans-serif;
@@ -148,5 +163,11 @@ h1 {
   margin-bottom: 0rem;
   line-height:0;
 }
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 }
 
