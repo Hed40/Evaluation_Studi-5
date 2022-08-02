@@ -3875,6 +3875,8 @@ fieldset:disabled .btn {
   .navbar-expand-xl .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
+    flex-direction: row-reverse;
+    margin-right: 50px;
   }
   .navbar-expand-xl .navbar-toggler {
     display: none;
@@ -3922,6 +3924,8 @@ fieldset:disabled .btn {
   .navbar-expand-xxl .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
+    flex-direction: row-reverse;
+    margin-right: 50px;
   }
   .navbar-expand-xxl .navbar-toggler {
     display: none;
@@ -3999,7 +4003,6 @@ fieldset:disabled .btn {
   --bs-navbar-color: rgba(255, 255, 255, 0.842);
   --bs-navbar-hover-color: rgba(255, 255, 255, 0.7);
   --bs-navbar-disabled-color: #3c6382;
-
   --bs-navbar-brand-color: #3c6382;
   --bs-navbar-brand-hover-color: #3c6382;
   --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);

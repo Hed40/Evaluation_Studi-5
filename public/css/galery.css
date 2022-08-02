@@ -25,15 +25,14 @@
   }
 
   h2 {
-    color: #3c6382;
+    color: white;
     font-family: "K2D", sans-serif;
-    font-size: medium;
+    font-size: large;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
     padding: 8px;
-    background-color: white;
   }
 
   .title_capt {
@@ -150,15 +149,14 @@
   }
 
   h2 {
-    color: #3c6382;
+    color: white;
     font-family: "K2D", sans-serif;
-    font-size: medium;
+    font-size: large;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
     padding: 8px;
-    background-color: white;
   }
 
   .title_capt {
@@ -260,7 +258,7 @@
     overflow: auto;
     border-radius: 20px;
     margin: 10px 5px 10px 5px;
-    width: 100%;
+    width: 60%;
   }
 
   .section_navigation {
@@ -275,19 +273,19 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 80%;
+    width: 70%;
+    margin-top: 40px;
   }
 
   h2 {
-    color: #3c6382;
+    color: white;
     font-family: "K2D", sans-serif;
-    font-size: medium;
+    font-size: large;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
     padding: 8px;
-    background-color: white;
   }
 
   .title_capt {

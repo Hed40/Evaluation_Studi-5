@@ -18,6 +18,10 @@ header {
     rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 
+.navbar-dark{
+display: flex;
+}
+
 .logo_camera {
   width: 30px;
   animation-direction: normal;
