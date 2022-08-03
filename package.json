@@ -9,6 +9,7 @@
     "concurrently": "^6.2.0",
     "jquery": "^3.6.0",
     "mdb-ui-kit": "^4.3.0",
+    "node": "^18.7.0",
     "node-sass": "^6.0.0"
   },
   "scripts": {
