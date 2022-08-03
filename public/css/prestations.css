@@ -20,22 +20,21 @@
   }
 
   h2 {
-    color: #3c6382;
+    color: white;
     font-family: "K2D", sans-serif;
-    font-size: large;
+    font-size: 20px;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
     padding: 8px;
-    background-color: white;
   }
 
   h3 {
     color: #3c6382;
     font-family: "K2D", sans-serif;
     text-shadow: #3c6382;
-    font-size: large;
+    font-size: 18px;
     text-align: center;
   }
 
@@ -158,7 +157,7 @@
   }
 
   h2 {
-    color: #3c6382;
+    color: white;
     font-family: "K2D", sans-serif;
     font-size: large;
     text-align: center;
@@ -166,13 +165,12 @@
     margin-bottom: 20px;
     border-radius: 5px;
     padding: 8px;
-    background-color: white;
   }
 
   h3 {
     color: #3c6382;
     font-family: "K2D", sans-serif;
-    font-size: medium;
+    font-size: 18px;
     text-align: left;
   }
 
@@ -299,21 +297,20 @@
   }
 
   h2 {
-    color: #3c6382;
+    color: white;
     font-family: "K2D", sans-serif;
-    font-size: large;
+    font-size: 20px;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
     padding: 8px;
-    background-color: white;
   }
 
   h3 {
     color: #3c6382;
     font-family: "K2D", sans-serif;
-    font-size: medium;
+    font-size: 18px;
     text-align: left;
   }
 

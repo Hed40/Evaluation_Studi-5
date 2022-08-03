@@ -26,14 +26,13 @@
   }
 
   h2 {
-    color: #3c6382;
+    color: white;
     font-family: "K2D", sans-serif;
-    font-size: medium;
+    font-size: 20px;
     text-align: center;
     margin-top: 20px;
     border-radius: 8px;
     padding: 8px;
-    background-color: white;
   }
 
   .title_capt {
@@ -48,7 +47,7 @@
   form {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 79%;
     padding-bottom: 3px;
   }
 
@@ -85,6 +84,17 @@
     width: 20rem;
     min-height: 60vh;
     margin-top: 20px;
+    align-items: center;
+  }
+
+  .logo_Cc_blue2{
+    display: flex;
+ 
+    margin-top: 10px;
+
+  }
+  .logo_Cc_blue2 > img {
+    width: 100px;
   }
 
   p {
@@ -93,13 +103,13 @@
     margin-right: 1rem;
     color: #3c6382;
     font-family: "K2D", sans-serif;
-    font-size: medium;
+    font-size: small;
     text-align: center;
   }
 
   .and {
     text-shadow: #3c6382;
-    font-size: larger;
+    font-size: medium;
   }
 
   .postal_adress {
@@ -149,14 +159,14 @@
   }
 
   h2 {
-    color: #3c6382;
+    color: white;
     font-family: "K2D", sans-serif;
-    font-size: medium;
+    font-size: 20px;
     text-align: center;
     margin-top: 20px;
     border-radius: 8px;
     padding: 8px;
-    background-color: white;
+
   }
 
   .title_capt {
@@ -210,10 +220,20 @@
     background-color: white;
     border-radius: 7px;
     width: 20rem;
-
+    align-items: center;
     margin-top: 20px;
   }
 
+  .logo_Cc_blue2{
+    display: flex;
+ 
+    margin-top: 10px;
+
+  }
+  .logo_Cc_blue2 > img {
+    width: 100px;
+  }
+  
   p {
     margin-top: 0.5rem;
     margin-left: 1rem;
@@ -226,7 +246,7 @@
 
   .and {
     text-shadow: #3c6382;
-    font-size: larger;
+    font-size: medium;
   }
 
   .postal_adress {
@@ -261,12 +281,12 @@
     display: flex;
     background-color: #3c63826c;
     border-radius: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     flex-direction: column;
     align-items: center;
     width: 30%;
-    height: 74vh;
+    height: 80vh;
     margin-right: 5px;
   }
 
@@ -278,14 +298,13 @@
   }
 
   h2 {
-    color: #3c6382;
+    color: white;
     font-family: "K2D", sans-serif;
-    font-size: medium;
+    font-size: 20px;
     text-align: center;
     margin-top: 20px;
     border-radius: 8px;
     padding: 8px;
-    background-color: white;
   }
 
   .title_capt {
@@ -316,12 +335,12 @@
     display: flex;
     background-color: #3c63826c;
     border-radius: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     flex-direction: column;
     align-items: center;
     width: 30%;
-    height: 74vh;
+    height: 80vh;
     margin-right: 10px;
   }
 
@@ -336,13 +355,25 @@
   .informations {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: white;
     border-radius: 7px;
     width: 20rem;
-    min-height: 60vh;
+    min-height: 61vh;
     margin-top: 20px;
+
   }
 
+  .logo_Cc_blue2{
+    display: flex;
+ 
+    margin-top: 10px;
+
+  }
+  .logo_Cc_blue2 > img {
+    width: 100px;
+  }
+  
   p {
     margin-top: 0.5rem;
     margin-left: 1rem;

@@ -2,7 +2,7 @@
 title: Contact
 layout: layout.njk
 style: /css/contact.css
-description: Charles Cantins photographie - Page de contacte, afin d'effectuer vos demandes et prendre vos rendez-vous.
+description: Charles Cantin photographie - Page de contacte, afin d'effectuer vos demandes et prendre vos rendez-vous.
 script: /js/validationForm.js
 ---
 <aside class="container_info">
@@ -11,6 +11,9 @@ script: /js/validationForm.js
             <h2>{{site.contactTitle1}}</h2>
         </div>
         <div class="informations">
+                        <div class="logo_Cc_blue2">
+            <img src="{{'/img/logo/logo_CC_blue2.png'}}" ></img>
+        </div>
             <p>Pour toutes demandes de devis et/ou prise de rendez-vous, vous pouvez me contacter directement via : </p>
             <p> Le formulaire de contacte ci-après.</p>
             <p class="and"><b>- OU -</b></p>
@@ -54,13 +57,13 @@ script: /js/validationForm.js
                 </div>
                 <div class="Message mb-2">
                     <label for="Message" class="form-label"></label>
-                    <textarea type="form-control" class="form-control" name="Message" id="Message" rows="6" placeholder="Veuillez écrire votre message ici..."></textarea>
+                    <textarea type="form-control" class="form-control" name="Message" id="Message" rows="11" placeholder="Veuillez écrire votre message ici..."></textarea>
                     <div class="invalid-feedback">Veuillez saisir au moins 20 caractères.</div>
                 </div>
                 <div class="submit">
                     <button type="submit" class="btn btn-primary ">Envoyer</button>
                 </div>
-            </form>
+            </form
         </section>
     </container>
       <button type="button" class="rounded-circle " id="btn-back-to-top">
