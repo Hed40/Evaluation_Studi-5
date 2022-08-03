@@ -1,5 +1,5 @@
 
-//Affectation du Toast
+//Affectation du Toast pour informations complémentaires " Tarifs et prestations" en cours
 const toastTrigger = document.getElementById('logo_info')
 const toastLiveExample = document.getElementById('liveToast')
 if (toastTrigger) {
