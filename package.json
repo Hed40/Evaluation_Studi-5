@@ -1,18 +1,45 @@
 {
-  "name": "base-eleventy",
-  "version": "1.0.0",
-  "description": "",
-  "main": ".eleventy.js",
+  "name": "charles-cantin",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "axios": "^0.21.1",
-    "concurrently": "^6.2.0",
-    "node-sass": "^6.0.0"
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "fs": "^0.0.1-security",
+    "js-yaml": "^4.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "5.0.0",
+    "read-yaml-file": "^2.1.0",
+    "styled-components": "^5.3.3",
+    "web-vitals": "^2.1.4"
   },
-  "devDependencies": {},
   "scripts": {
-    "sass": "node-sass src/scss/main.scss src/css/style.css",
-    "build": "npm run sass && eleventy"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "author": "",
-  "license": "ISC"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0"
+  }
 }
