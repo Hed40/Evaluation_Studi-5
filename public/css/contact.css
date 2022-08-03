@@ -1,0 +1,414 @@
+@media screen and (min-width: 375px) and (orientation: portrait) {
+  /*Mobile First*/
+  /* Contact Form*/
+
+  main {
+    flex-wrap: wrap;
+  }
+
+  .container_form {
+    display: flex;
+    background-color: #3c63826c;
+    border-radius: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    align-items: center;
+    width: 95%;
+  }
+
+  .section_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  h2 {
+    color: white;
+    font-family: "K2D", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 8px;
+  }
+
+  .title_capt {
+    display: flex;
+    justify-content: center;
+  }
+
+  label {
+    color: white;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 79%;
+    padding-bottom: 3px;
+  }
+
+  .submit {
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+  }
+
+  /*informations Aside*/
+
+  .container_info {
+    background-color: #3c63826c;
+    border-radius: 20px;
+    margin-top: 8px;
+    width: 95%;
+    height: 74vh;
+  }
+
+  .section_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .informations {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 7px;
+    width: 20rem;
+    min-height: 60vh;
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  .logo_Cc_blue2{
+    display: flex;
+ 
+    margin-top: 10px;
+
+  }
+  .logo_Cc_blue2 > img {
+    width: 100px;
+  }
+
+  p {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: #3c6382;
+    font-family: "K2D", sans-serif;
+    font-size: small;
+    text-align: center;
+  }
+
+  .and {
+    text-shadow: #3c6382;
+    font-size: medium;
+  }
+
+  .postal_adress {
+    justify-content: center;
+  }
+  .rounded-circle,
+  .border-light {
+    background-color: #3c63826c;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 171px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    border: #3c6382;
+  }
+
+  .arrow_img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 1199px) and (orientation: landscape) {
+  /* Tablet and Descktop*/
+  /* Contact Form*/
+
+  .container_form {
+    display: flex;
+    background-color: #3c63826c;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-right: 5px;
+  }
+
+  .section_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+  }
+
+  h2 {
+    color: white;
+    font-family: "K2D", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 8px;
+
+  }
+
+  .title_capt {
+    display: flex;
+    justify-content: center;
+  }
+
+  label {
+    color: white;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 3px;
+  }
+
+  .submit {
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+  }
+
+  /*informations Aside*/
+
+  .container_info {
+    display: flex;
+    background-color: #3c63826c;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-left: 5px;
+    margin-right: 10px;
+  }
+
+  .section_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+  .informations {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 7px;
+    width: 20rem;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .logo_Cc_blue2{
+    display: flex;
+ 
+    margin-top: 10px;
+
+  }
+  .logo_Cc_blue2 > img {
+    width: 100px;
+  }
+  
+  p {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: #3c6382;
+    font-family: "K2D", sans-serif;
+    font-size: medium;
+    text-align: center;
+  }
+
+  .and {
+    text-shadow: #3c6382;
+    font-size: medium;
+  }
+
+  .postal_adress {
+    justify-content: center;
+  }
+
+  .rounded-circle,
+  .border-light {
+    background-color: #3c63826c;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 165px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    border: #3c6382;
+  }
+
+  .arrow_img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (orientation: landscape) {
+  /* Tablet and Descktop*/
+  /* Contact Form*/
+
+  .container_form {
+    display: flex;
+    background-color: #3c63826c;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 80vh;
+    margin-right: 5px;
+  }
+
+  .section_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+  }
+
+  h2 {
+    color: white;
+    font-family: "K2D", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 8px;
+  }
+
+  .title_capt {
+    display: flex;
+    justify-content: center;
+  }
+
+  label {
+    color: white;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 3px;
+  }
+
+  .submit {
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+  }
+
+  /*informations Aside*/
+
+  .container_info {
+    display: flex;
+    background-color: #3c63826c;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 80vh;
+    margin-right: 10px;
+  }
+
+  .section_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+  .informations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 7px;
+    width: 20rem;
+    min-height: 61vh;
+    margin-top: 20px;
+
+  }
+
+  .logo_Cc_blue2{
+    display: flex;
+ 
+    margin-top: 10px;
+
+  }
+  .logo_Cc_blue2 > img {
+    width: 100px;
+  }
+  
+  p {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: #3c6382;
+    font-family: "K2D", sans-serif;
+    font-size: medium;
+    text-align: center;
+  }
+
+  .and {
+    text-shadow: #3c6382;
+    font-size: larger;
+  }
+  .postal_adress {
+    justify-content: center;
+  }
+  .rounded-circle,
+  .border-light {
+    display: none;
+    background-color: #3c63826c;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 165px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    border: #3c6382;
+  }
+  #btn-back-to-top,
+  .arrow_img {
+    display: none;
+    width: 25px;
+    height: 25px;
+  }
+}
