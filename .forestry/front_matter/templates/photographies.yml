@@ -28,7 +28,6 @@ fields:
       path: 
   label: Category
 pages:
-- src/content/photographies/Art_1.md
 - src/content/photographies/Baby_1.md
 - src/content/photographies/Baby_2.md
 - src/content/photographies/Baby_3.md
