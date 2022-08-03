@@ -5,13 +5,10 @@
   "main": ".eleventy.js",
   "dependencies": {
     "axios": "^0.21.1",
-    "bootstrap": "^5.2.0",
     "concurrently": "^6.2.0",
-    "jquery": "^3.6.0",
-    "mdb-ui-kit": "^4.3.0",
-    "node": "^18.7.0",
     "node-sass": "^6.0.0"
   },
+  "devDependencies": {},
   "scripts": {
     "sass": "node-sass src/scss/main.scss src/css/style.css",
     "build": "npm run sass && eleventy"
