@@ -33,31 +33,31 @@ script: /js/validationForm.js
             <div class= "title_capt">
                 <h2>{{site.contactTitle2}}</h2>
             </div>
-            <form class=" needs-validation" id="ContactForm" method="POST" data-netlify="true" validate>
+            <form class=" needs-validation" id="ContactForm" method="POST" data-netlify="true">
                 <div class="lastname mb-2">
                     <label for="lastName" class="form-label"></label>
-                    <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Nom">
+                    <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Nom" required>
                     <div class="invalid-feedback">Veuillez saisir votre nom.</div>
                 </div>
                 <div class="firstname mb-2">
                     <label for="firstname" class="form-label"></label>
-                    <input type="text" class="form-control" name="firstName" id="firstName" placeholder="Prénom">
+                    <input type="text" class="form-control" name="firstName" id="firstName" placeholder="Prénom" required>
                     <div class="invalid-feedback">Veuillez saisir votre prénom.</div>
                 </div>
 
                 <div class="email mb-2">
                     <label for="email" class="form-label"></label>
-                    <input type="email" class="form-control" name="email" id="email" placeholder="j.dupont@gmail.com">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="j.dupont@gmail.com" required>
                     <div class="invalid-feedback">Veuillez saisir votre e-mail.</div>
                 </div>
                 <div class="phoneNumber mb-2">
                     <label for="phoneNumber" class="form-label"></label>
-                    <input type="phoneNumber" class="form-control" name="phoneNumber" id="phoneNumber" placeholder="n° de téléphone">
+                    <input type="phoneNumber" class="form-control" name="phoneNumber" id="phoneNumber" placeholder="n° de téléphone" required>
                     <div class="invalid-feedback">Veuillez saisir votre numéro de téléphone.</div>
                 </div>
                 <div class="Message mb-2">
                     <label for="Message" class="form-label"></label>
-                    <textarea type="form-control" class="form-control" name="Message" id="Message" rows="11" placeholder="Veuillez écrire votre message ici..."></textarea>
+                    <textarea type="form-control" class="form-control" name="Message" id="Message" rows="11" placeholder="Veuillez écrire votre message ici..." required></textarea>
                     <div class="invalid-feedback">Veuillez saisir au moins 20 caractères.</div>
                 </div>
                 <div class="submit">
