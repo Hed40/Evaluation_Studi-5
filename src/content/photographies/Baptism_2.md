@@ -1,5 +1,6 @@
 ---
 category: Baptême
-photographie: "/uploads/baptism_2.jpg"
-
+photographie: /uploads/baptism_2.jpg
+_template: photographies
 ---
+

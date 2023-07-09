@@ -1,5 +1,6 @@
 ---
 category: Couple
-photographie: "/uploads/couple_4.jpg"
-
+photographie: /uploads/couple_4.jpg
+_template: photographies
 ---
+

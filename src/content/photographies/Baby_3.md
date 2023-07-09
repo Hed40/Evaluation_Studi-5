@@ -1,5 +1,6 @@
 ---
 category: Bébé
-photographie: "/uploads/baby_3.jpg"
-
+photographie: /uploads/baby_3.jpg
+_template: photographies
 ---
+

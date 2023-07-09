@@ -1,5 +1,6 @@
 ---
 category: Portrait
-photographie: "/uploads/portrait_3.jpg"
-
+photographie: /uploads/portrait_3.jpg
+_template: photographies
 ---
+
