@@ -7,17 +7,17 @@ const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
 
 export default defineConfig({
   branch,
-  clientId: null, // Get this from tina.io
-  token: null, // Get this from tina.io
+  clientId: "24ac0a06-99a0-49b6-9356-c3789e4a7a67", // Get this from tina.io
+  token: "4e8c7b533441b63a422912c6fecc42d783de5dd6", // Get this from tina.io
   client: { skip: true },
   build: {
     outputFolder: "admin",
-    publicFolder: "public",
+    publicFolder: "static",
   },
   media: {
     tina: {
       mediaRoot: "",
-      publicFolder: "public",
+      publicFolder: "static",
     },
   },
   schema: {
@@ -27,6 +27,7 @@ export default defineConfig({
         label: "Ajouter une photographie",
         name: "ajouter_une_photographie",
         path: "src/content/photographies",
+        frontmatterFormat: "yaml",
         match: {
           include: "**/*",
         },
@@ -46,6 +47,7 @@ export default defineConfig({
         label: "Ajouter une prestation",
         name: "ajouter_une_prestation",
         path: "src/content/prestations",
+        frontmatterFormat: "yaml",
         match: {
           include: "**/*",
         },
